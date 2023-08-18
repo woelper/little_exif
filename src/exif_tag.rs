@@ -36,7 +36,7 @@ macro_rules! build_tag_enum {
 		/// These are the currently supported tags by little_exif. 
 		/// Note that for tags that are unknown at the moment a fallback
 		/// solution is provided using the `Unknown...` variants. 
-		#[derive(PartialEq, Debug)]
+		#[derive(PartialEq, Debug, Clone)]
 		pub enum 
 		ExifTag
 		{
